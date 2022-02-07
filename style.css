@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+  }
+  
+  /*--Styling for Menu--*/
+  .menu-container {
+    box-sizing: border-box;
+    margin-left: 88px;
+  }
+  
+  .food-item-info, .drink-item-info {
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 1px;
+  }
+  
+  .addtocart {
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    right: 25px;
+    border: none;
+  }
+  
+  .menu-container h1, h2 {
+    text-align: center;
+  }
+  
+  .food_name, .drink_name, .price {
+    font-weight: bold;
+  }
+  
+  .food-item-info .top, .bottom {
+    display: flex;
+  }
+  
+  .drink-item-info .top, .bottom {
+    display: flex;
+  }
+  
+  .food-item-info .top .price {
+    position: absolute;
+    right: 25px;
+  }
+  
+  .food-item-info .top .food_name {
+    width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .drink-item-info .top .price {
+    position: absolute;
+    right: 25px;
+  }
+  
+  .drink-item-info .top .drink_name {
+    width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .item-detail {
+    font-style: italic;
+  }
+  
+  /*--Styling for Popup--*/
+  .popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    z-index: 100;
+    background-color: #dedede;
+    top: 0px;
+    position: fixed;
+  }
+  
+  .btn-confirm {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: default;
+    margin-top: 15px;
+  }
+  
+  #city {
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
+  .popup {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .popup h2 {
+    margin: 0;
+    padding-bottom: 15px;
+  }

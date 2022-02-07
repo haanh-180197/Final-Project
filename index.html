@@ -1,1 +1,105 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="popup-container" class="popup-container">
+            <form id="popup" class="popup">
+              <h2>Chọn nơi bạn đang ở:</h2>
+              <input id="city" name="city" placeholder="VD: Hà Nội" list="citieslist" required/>
+              <datalist id="citieslist">
+                <option value="Hà Nội"></option>
+                <option value="Hồ Chí Minh"></option>
+                <option value="Đà Nẵng"></option>
+              </datalist>
+              <br />
+              <button class="btn-confirm">Xác nhận</button>
+            </form>
+        </div>
+        <div id="menu-container" class="menu-container">
+            <h1>The Menu</h1>
+            <div id="food_list" class="food_list">
+              <h2>Pizza</h2>
+              <div class="food-item-info">
+                <div class="top">
+                  <div class="food_name">Pizza Bò & Tôm Nướng Kiểu Mỹ - Surf & Turf</div>
+                  <div class="price">99,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="Pizza Bò & Tôm Nướng Kiểu Mỹ - Surf & Turf" data-price="99000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+              <div class="food-item-info">
+                <div class="top">
+                  <div class="food_name">Pizza 5 Loại Thịt Thượng Hạng - Meat Lovers</div>
+                  <div class="price">99,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="Pizza 5 Loại Thịt Thượng Hạng - Meat Lovers" data-price="99000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+              <div class="food-item-info">
+                <div class="top">
+                  <div class="food_name">Pizza Hải Sản Xốt Mayonnaise - Ocean Mania</div>
+                  <div class="price">99,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="Pizza Hải Sản Xốt Mayonnaise - Ocean Mania" data-price="99000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="drink_list" class="drink_list">
+              <h2>Đồ uống</h2>
+              <div class="drink-item-info">
+                <div class="top">
+                  <div class="drink_name">LON COCA ZERO 330ML</div>
+                  <div class="price">20,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="LON COCA ZERO 330ML" data-price="20000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+              <div class="drink-item-info">
+                <div class="top">
+                  <div class="drink_name">CHAI FANTA 390ML</div>
+                  <div class="price">20,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="CHAI FANTA 390ML" data-price="20000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+              <div class="drink-item-info">
+                <div class="top">
+                  <div class="drink_name">TRÀ CHANH SẢ 350ML</div>
+                  <div class="price">25,000₫</div>
+                </div>
+                <div class="bottom">
+                  <div class="item-detail">Chi tiết món ăn</div>
+                  <button class="addtocart" data-name="TRÀ CHANH SẢ 350ML" data-price="25000">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="script.js"></script>
+    </body>
+</html>
