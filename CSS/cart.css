@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+}
+header section{
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .home i{
+    font-size: 24px;
+    color: black;
+}
+header .home a{
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+
+}
+header .name p{
+    font-weight: 900;
+    font-size: 24px;
+}
+header .cart i{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+}
+header .cart .totalHeader{
+    padding-left: 10px;
+    font-size: 18px;
+    color: red;
+}
+header .cart .number{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+header .cart .circle{
+    position: absolute;
+    color: white;
+    left: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+/* Location */
+.location{
+    display: flex;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.location div{
+    flex: 50%;
+    display: flex;
+    padding: 8px;
+}
+.location .ship{
+    flex-direction: column;
+    justify-content: center;
+}
+.location .change{
+    flex-direction: row-reverse;
+    align-items: center;
+    font-weight: bolder;
+}
+.location .change a{
+    text-decoration: none;
+    color: black;
+}
+.location .city{
+    font-weight: 900;
+}
+.locationHr{
+    width: 98%;
+    margin: auto;
+}
+/* Pay */
+.pay{
+    padding: 11px;
+    height: 1900px;
+}
+.pay .header{
+    background-color: red;
+    color: white;
+    height: 6vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.pay .listOrder{
+    padding: 0 12px;
+    padding-top: 50px;
+}
+.pay .listOrder .listOrderName{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.pay .listOrder .listOrderName p{
+    font-size: 30px;
+}
+.pay .listOrder .listOrderPrice{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.pay .listOrder .listOrderPrice div{
+    display: flex;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.pay .listOrder .listOrderPrice p{
+    padding: 0 5px;
+}
+.pay form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.pay form textarea{
+    width: 90%;
+    height: 9vh;
+    font-size: 18px;
+    padding: 5px;
+}
+.pay .sale{
+    padding: 0 12px;
+}
+.pay .sale form input{
+    width: 65%;
+    height: 5vh;
+    padding-left: 12px;
+}
+.pay .sale form button{
+    width: 25%;
+    height: 5vh;
+    margin-left: 2%;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.pay .total hr{
+    border: 1px solid black;
+}
+.pay .total{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 18px;
+}
+/* Bar */
+.bottomBar{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 900;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background-color: white;
+}
+.bottomBar div{
+    flex: 50%;
+    border: 1px solid black;
+    margin: 7px;
+    border-radius: 7px;
+    padding: 8px;
+    text-align: center;
+}
+.bottomBar .red{
+    background-color: red;
+    color: white;
+}
+/* footer */
+footer{
+    padding-top: 35px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 26px;
+}
+
