@@ -104,3 +104,18 @@ body {
   .text-box-title-h3 h3 {
     margin: 0px;
   }
+
+  .footer {
+      display: flex;
+      padding: 35px 30px 20px;
+      background-color: #333333;
+      color:#dddddd;
+  }
+
+  .footer-item-left, .footer-item-right {
+      width: 50%;
+  }
+
+  .footer-item-left {
+      margin-right: 40px;
+  }
