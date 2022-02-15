@@ -138,12 +138,13 @@ body{
     justify-content: flex-end;
     padding-top: 10px;
 }
-.cartIndex .cart .btnSubmit button{
+.cartIndex .cart .btnSubmit a{
     font-size: 18px;
     color: white;
     background-color: #ED213A;
     border: none;
     padding: 8px 14px;
+    text-decoration: none;
 }
 /* footer */
 .footer {

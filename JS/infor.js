@@ -1,5 +1,4 @@
 const btnSubmit = document.querySelector(`.inforIndex .infor .inforOne .inforTwo button`);
-const checkBoxNoShip = document.querySelector(`.inforIndex .infor .inforOne input[name="nonship"]`);
 
 btnSubmit.addEventListener(`click`, (e) =>{
     e.preventDefault();
@@ -25,11 +24,15 @@ const addInfor = (name, number, city, location, date) =>{
 }
 // checkBox
 const inforTwo = document.querySelector(`.inforIndex .infor .inforOne .inforTwo`)
-const checkBoxShip = document.querySelector(`.inforIndex .infor .inforOne input[name="ship"]`);
-checkBoxShip.addEventListener(`change`, (e) =>{
-    if(e.target.checked){
+const checkBoxShip = document.querySelector(`.inforIndex .infor .inforOne input[class="ship"]`);
+const checkBoxNoShip = document.querySelector(`.inforIndex .infor .inforOne input[class="noship"]`);
+checkBoxShip.addEventListener(`click`, (e) =>{
+    
         inforTwo.className = `inforTwo open`;
-    }else{
-        inforTwo.className = `inforTwo close`;
-    }
+        // inforTwo.className = `inforTwo close`;  
+})
+checkBoxNoShip.addEventListener(`click`, (e) =>{
+    
+    // inforTwo.className = `inforTwo open`;
+    inforTwo.className = `inforTwo close`;  
 })

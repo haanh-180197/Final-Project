@@ -105,7 +105,7 @@ body{
 .inforIndex .infor .inforOne form div .checkbox label{
     width: 95%;
 }
-.inforIndex .infor .inforOne form input[type="checkbox"]{
+.inforIndex .infor .inforOne form input[type="radio"]{
     margin-right: 10px;
 }
 .inforIndex .infor .inforOne form input[type="date"], input[type="number"]{
