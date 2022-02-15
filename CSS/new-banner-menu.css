@@ -1,15 +1,17 @@
 body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0px;
 }
-ul {
+.indexUl {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   list-style: none;
 }
   
-li {
+.indexLi {
   color: #333333;
   display: inline-block;
   font-size: 14px;
@@ -20,7 +22,7 @@ li {
   text-transform: capitalize;
 }
   
-a {
+.aIndex {
   background: #dddddd;
   border-radius: 18px;
   color: #333333;
@@ -52,7 +54,6 @@ button:hover {
   
 #sidebar {
   width: 300px;
-  border: 3px black solid;
 }
   
 .all-container {
@@ -66,6 +67,7 @@ button:hover {
   
 .list-item {
   display: flex;
+  justify-content: center;
 }
   
 .h3 {
@@ -119,3 +121,5 @@ button:hover {
 .footer-item-left {
   margin-right: 40px;
 }
+
+/* merge */

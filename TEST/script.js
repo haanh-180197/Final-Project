@@ -1,12 +1,15 @@
 /*JS for menu*/
 const menu_container = document.getElementById("menu-container")
 const addToCart = document.querySelectorAll(".addtocart");
+const itemPhoto = document.querySelectorAll(`.item-photo`);
 
 for (let i = 0; i < addToCart.length; i++) {
+  
   addToCart[i].addEventListener("click", function(event) {
   event.preventDefault();
   const name = event.target.getAttribute("data-name");
   const price = Number(event.target.getAttribute("data-price"));
+  const imgSrc = event.target.getAttribute(`data-src`);
   addItemToCart(name, price, 1);
 })};
 
@@ -21,6 +24,7 @@ const Item = function(name, price, count) {
 
 // Add item to cart
 function addItemToCart(name, price, count) {
+  console.log(name);
   for(const item in cart) {
       if(cart[item].name === name) {
         cart[item].count ++;

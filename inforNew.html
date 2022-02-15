@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/cart.css"/>
-    <link rel="stylesheet" href="/CSS/sidebarleft.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/infor.css"/>
+    <link rel="stylesheet" href="/CSS/sidebarleft.css">
 </head>
 <body>
+
     <aside class="sideBarLeft">
         <!-- merge -->
         <div class="navigation">
@@ -73,33 +72,68 @@
           </div>
       <!-- merge -->
     </aside>
-    <article class="cartIndex"> 
+    <article class="inforIndex"> 
         <header>
-            <p>Cart</p>
+            <p>Infor</p>
         </header>
-        <section class="cart">
+        <section class="infor">
             <section>
-                <div class="headerCart"><p></p></div>
-                <div class="cartUl">
-                    <ul>
-                    </ul>
+                <div class="tienDo">
+                    <div class="tienDoDiv">
+                        <div class="blue">
+                            <p>1</p>
+                        </div>
+                        <p>Tien Hanh Dat Hang</p>
+                    </div>
+                    <div class="tienDoDiv">
+                        <div class="blue">
+                            <p>2</p>
+                        </div>
+                        <p>Thong tin Giao hang</p>
+                    </div>
+                    <div class="tienDoDiv">
+                        <div class="gray">
+                            <p>3</p>
+                        </div>
+                        <p>Thanh toan va dat hang</p>
+                    </div>
+                    <hr>
                 </div>
-                <div class="addFood">
-                    <a href="/new-banner-menu.html"><p>+ Them Mon</p></a>
-                </div>
-                <div class="note">
-                    <p>Note</p>
+                <div class="inforOne">
                     <form>
-                        <textarea placeholder="Neu can luu y gi. Ban hay nhap vao day"></textarea>
-                    </form>
-                </div>
-                <div class="total">
-                    <p>Tam tinh</p>
-                    <p class="totalPrice"></p>
-                </div>
-                <div class="btnSubmit">
-                    <form>
-                        <button>Tien Hanh Dat Hang</button>
+                        <div>
+                            <label>Phuong thuc giao hang</label>
+                            <div class="checkbox">
+                                <input type="checkbox" name="ship"><label>Giao hang</label><br>
+                                <input type="checkbox" name="nonship"><label>Tu den Lay</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Thoi gian giao hang</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div>
+                            <label>So dien thoai dat hang</label>
+                            <input type="number" name="number" placeholder="So dien thoai dat hang" required>
+                        </div>
+                        <div>
+                            <label>Thong tin giao hang</label>
+                            <article class="inforTwo close">
+                                <form>
+                                    <label for="name">Ten</label>
+                                    <input type="text" name="name" required>
+                                    <label for="location">Dia chi</label>
+                                    <input type="text" name="location" required>
+                                    <label for="city">Tinh/Thanh pho</label>
+                                    <select name="city" required>
+                                        <option>-- Lua Chon --</option>
+                                        <option>Ha Noi</option>
+                                        <option>Ho Chi Minh</option>
+                                    </select>
+                                    <button>Luu</button>
+                                </form>
+                            </article>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -120,7 +154,7 @@
             </footer>
         </section>
     </article>
-    <script src="JS/cart.js"></script>
+    <script src="JS/infor.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     

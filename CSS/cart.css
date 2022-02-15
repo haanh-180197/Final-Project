@@ -2,9 +2,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/* sidebarleft */
+body{
+    display: flex;
+}
+.red{
+    color: red;
+}
+.sideBarLeft{
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 /* header */
-header{
+.cartIndex{
+    width: 100%;
+}
+.cartIndex header{
+    height: 200px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image-banner-menu/banner/photo-1496412705862-e0088f16f791.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cartIndex header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+/* Cart */
+.cartIndex .cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.cartIndex .cart section{
+    width: 40vw;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cartIndex .cart .headerCart{
+    padding-bottom: 10px;
+}
+.cartIndex .cart ul li{
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 15px 0;
+}
+.cartIndex .cart ul li:first-child{
+    border-top: 1px solid gray;
+}
+.cartIndex .cart ul li div{
+    padding-right: 15px;
+}
+.cartIndex .cart ul li .img{
+    width: 30%;
+}
+.cartIndex .cart ul li .img img{
+    width: 100%;
+    background-size: cover;
+}
+.cartIndex .cart ul li .name{
+    width: 50%;
+}
+.cartIndex .cart ul li .name span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+.cartIndex .cart ul li .name span p{
+    color: red;
+}
+.cartIndex .cart ul li .price{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cartIndex .cart ul li .price p{
+    padding-bottom: 5px;
+}
+.cartIndex .cart ul li .price .priceOne{
+    color: gray;
+}
+.cartIndex .cart ul li .price .delete{
+    color: #ED213A;
+    padding-top: 6px;
+}
+/* add food */
+.cartIndex .cart .addFood{
+    display: flex;
+    justify-content: flex-end;
+    color: #4e54c8;
+    padding-top: 10px;
+}
+.cartIndex .cart .addFood a{
+    text-decoration: none;
+}
+/* Note */
+.cartIndex .cart .note,form{
+    padding-top: 16px;
+}
+.cartIndex .cart form textarea{
+    width: 100%;
+    padding: 3px;
+}
+.cartIndex .cart .total{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    color: gray;
+}
+.cartIndex .cart .total .totalPrice{
+    padding-left: 76px;
+    color: #ED213A;
+}
+/* btnSubmit */
+.cartIndex .cart .btnSubmit{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+.cartIndex .cart .btnSubmit button{
+    font-size: 18px;
+    color: white;
+    background-color: #ED213A;
+    border: none;
+    padding: 8px 14px;
+}
+/* footer */
+.footer {
+    margin-top: 50px;
+    display: flex;
+    padding: 35px 30px 20px;
+    background-color: #333333;
+    color:#dddddd;
+  }
+  
+  .footer-item-left, .footer-item-right {
+    width: 50%;
+  }
+  
+  .footer-item-left {
+    margin-right: 40px;
+  }
+/* header */
+/*header{
     height: 7vh;
     width: 100%;
     display: flex;
@@ -54,7 +212,7 @@ header .cart .circle{
     
 }
 /* Location */
-.location{
+/*.location{
     display: flex;
     height: 7vh;
     position: sticky;
@@ -87,9 +245,8 @@ header .cart .circle{
     margin: auto;
 }
 /* Pay */
-.pay{
+/*.pay{
     padding: 11px;
-    height: 1900px;
 }
 .pay .header{
     background-color: red;
@@ -168,7 +325,7 @@ header .cart .circle{
     font-size: 18px;
 }
 /* Bar */
-.bottomBar{
+/*.bottomBar{
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
@@ -191,7 +348,7 @@ header .cart .circle{
     color: white;
 }
 /* footer */
-footer{
+/*footer{
     padding-top: 35px;
     padding-bottom: 80px;
     text-align: center;

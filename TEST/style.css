@@ -1,8 +1,10 @@
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
   }
-  
-  /*--Styling for Menu--*/
+ 
+  --Styling for Menu--
   .menu-container {
     box-sizing: border-box;
     margin-left: 88px;
@@ -68,7 +70,7 @@ body {
   }
   
   /*--Styling for Popup--*/
-  .popup-container {
+   .popup-container {
     display: flex;
     align-items: center;
     justify-content: center;

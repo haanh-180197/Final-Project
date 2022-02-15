@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/* sidebarleft */
+body{
+    display: flex;
+}
+.red{
+    color: red;
+}
+.sideBarLeft{
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.detailIndex{
+    width: 100%;
+}
+.detailIndex header{
+    height: 200px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image-banner-menu/banner/photo-1496412705862-e0088f16f791.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.detailIndex header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+.detailIndex .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.detailIndex .detail .center{
+    width: 70vw;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.detail .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.detail .img div{
+    padding: 0 10px;
+}
+.detail .img .big{
+    width: 70%;
+}
+.detail .img .big img{
+    width: 100%;
+    background-size: cover;
+}
+.detail .img .small{
+    width: 30%;
+}
+.detail .img .small img{
+    width: 100%;
+    background-size: cover;
+}
+/* namePrice */
+.detail .namePrice{
+    margin-top: 60px;
+    margin-left: 18px;
+}
+.detail .namePrice p{
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* btn */
+.detail .btn{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.detail .btn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px 16px;
+    border: 1px solid #bdc3c7;
+}
+.detail .btn div p{
+    padding: 0 20px;
+}
+.detail form button{
+    border: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px 100px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+}

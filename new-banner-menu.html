@@ -2,13 +2,82 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="new-banner-menu.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/new-banner-menu.css" />
+    <link rel="stylesheet" href="/CSS/sidebar.css" />
+    <link rel="stylesheet" href="/CSS/sidebarleft.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
     <div id="all-container" class="all-container">
         <div id="sidebar">
-
+            <!-- Merge -->
+            <div class="navigation">
+                <ul>
+                  <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="#banner-menu">
+                      <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                      <span class="title">Trang Chủ</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                      <span class="title">Search</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#footer">
+                      <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                      <span class="title">Giới Thiệu</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#menu">
+                      <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                      <span class="title">Thực Đơn</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                      <span class="title">Tin Tức</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="/cart.html">
+                      <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                      <span class="title">Giỏ Hàng</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="navigate-outline"></ion-icon></span>
+                      <span class="title">Location</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                      <span class="title">Login/Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          
+              <div class="toggle">
+                <ion-icon name="menu-outline" class="open"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+              </div>
+              <!-- Merge -->
         </div>
         <div id="banner-menu" class="banner-menu">
             <div id="banner" class="banner">
@@ -29,18 +98,66 @@
                         </h3>
                     </div>
                 </div>
+                <!-- merch -->
+                <div class="sideBarRight"></div>
+                <div>
+                    <article class="sideBarR">
+                        <section class="search">
+                            <form>
+                                <input type="text" placeholder="Ban can tìm gi?">
+                            </form>
+                        </section>
+                        <section class="searchBtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </section>
+                        <section class="account">
+                            <i class="fa-solid fa-user"></i>
+                        </section>
+                        <section class="like">
+                            <i class="fa-solid fa-heart"></i>
+                            <div class="likeCount">
+                                <p>1</p>
+                            </div>
+                        </section>
+                        <section class="cart">
+                            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="cartCount">
+                                <p></p>
+                            </div>
+                        </section>
+                        <div class="cartUl">
+                            <ul class="indexUl">
+                                <li>
+                                    <p class="totalItem bold"></p>
+                                    <p>70</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="likeUl">
+                            <p>Ban da thich 1 Mon an</p>
+                        </div>
+                        <div class="searchUl">
+                            <ul class="indexUl">
+                                <li>
+                                    <p>dsadsadasd</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <!--  -->
                 <img src="image-banner-menu\banner\banner-header-web1-adf2.jpg" width="100%" height="100%" />
             </div>
             <div id="menu" class="menu">
                 <h2 class="heading-h2">Thực đơn</h2>
                 <div class="filter-menu-product">
-                    <ul>
-                        <li><a href="#">Tất cả</a></li>
-                        <li><a href="#">Được yêu thích nhất</a></li>
-                        <li><a href="#">Món dùng ngay</a></li>
-                        <li><a href="#">Món chế biến sẵn</a></li>
-                        <li><a href="#">Đồ uống</a></li>
-                        <li><a href="#">Combo</a></li>
+                    <ul class="indexUl">
+                        <li class="indexLi"><a class="aIndex" href="#khai-vi">Khai Vi</a></li>
+                        <li class="indexLi"><a class="aIndex" href="#mon-chinh">Mon Chinh</a></li>
+                        <li class="indexLi"><a class="aIndex" href="#canh-sup">Canh - Sup</a></li>
+                        <li class="indexLi"><a class="aIndex" href="#com-mi-chao">CƠM - MÌ - CHÁO</a></li>
+                        <li class="indexLi"><a class="aIndex" href="#trang-mieng">TRÁNG MIỆNG</a></li>
+                        <li class="indexLi"><a class="aIndex" href="#do-uong">ĐỒ UỐNG</a></li>
                     </ul>
                 </div>
                 <div id="khai-vi" class="khai-vi">
@@ -48,15 +165,15 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250" src="image-banner-menu\menu\khai vị\nem-chua-423b.jpg" />
+                                <a href="/detail.html"><img width="320" height="250" src="image-banner-menu\menu\khai vị\nem-chua-423b.jpg" /></a>
                             </div>
                             <h3> Nem chua TASTY</h3>
                             <p>78.000 đ</p>
-                            <button class="addtocart" data-name="Nem chua TASTY" data-price="78000">Đặt món</button>
+                            <button class="addtocart" data-name="Nem chua TASTY" data-price="78000" >Đặt món</button>
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250" src="image-banner-menu\menu\khai vị\chao-tom-4e2c.jpg" />
+                                <a href="/detail.html"><img width="320" height="250" src="image-banner-menu\menu\khai vị\chao-tom-4e2c.jpg" /></a>
                             </div>
                             <h3>
                                 Chạo tôm TASTY
@@ -68,7 +185,7 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250" src="image-banner-menu\menu\khai vị\nem-lui-434c.jpg" />
+                                <a href="/detail.html"><img width="320" height="250" src="image-banner-menu\menu\khai vị\nem-lui-434c.jpg" /></a>
                             </div>
                             <h3>
                                 Nem lụi nướng mía
@@ -82,8 +199,8 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\khai vị\18-salad-rau-mua-3-fea4.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\khai vị\18-salad-rau-mua-3-fea4.jpg" /></a>
                             </div>
                             <h3>
                                 Salad rau mùa sốt mác mác
@@ -96,8 +213,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\khai vị\salad-bo-1280x1000-4dbe.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\khai vị\salad-bo-1280x1000-4dbe.jpg" /></a>
                             </div>
                             <h3>
                                 Salad bò Nam Bộ
@@ -109,8 +226,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\khai vị\goi-tai-heo-4443.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\khai vị\goi-tai-heo-4443.jpg" /></a>
                             </div>
                             <h3>
                                 Gỏi tai heo hoa chuối
@@ -128,7 +245,7 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250" src="image-banner-menu\menu\món chính\gio-heo-02b0.jpg" />
+                                <a href="/detail.html"><img width="320" height="250" src="image-banner-menu\menu\món chính\gio-heo-02b0.jpg" /></a>
                             </div>
                             <h3>Giò heo hầm pate</h3>
                             <p>168.000 đ</p>
@@ -136,8 +253,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\món chính\ba-roi-mam-ngo-1280x1000-9503.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\món chính\ba-roi-mam-ngo-1280x1000-9503.jpg" /></a>
                             </div>
                             <h3>
                                 Ba rọi chiên mắm ngò
@@ -150,8 +267,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\món chính\ga-cuon-la-dua-1280x1000-628f.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\món chính\ga-cuon-la-dua-1280x1000-628f.jpg" /></a>
                             </div>
                             <h3>
                                 Gà cuốn lá dứa
@@ -165,8 +282,8 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\món chính\uc-ga-bb75-min-4c96.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\món chính\uc-ga-bb75-min-4c96.jpg" /></a>
                             </div>
                             <h3>
                                 Ức gà đút lò phủ lá chanh
@@ -179,8 +296,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\món chính\suon-bbq-1280x1000-a267.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\món chính\suon-bbq-1280x1000-a267.jpg" /></a>
                             </div>
                             <h3>
                                 Sườn heo nướng BBQ táo đỏ
@@ -193,8 +310,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\món chính\ba-chi-nuong-1280x1000-4196.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\món chính\ba-chi-nuong-1280x1000-4196.jpg" /></a>
                             </div>
                             <h3>
                                 Ba rọi nướng riềng mẻ
@@ -212,8 +329,8 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\canh súp\canh-chua-ca-loc-1280x1000-368f.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\canh súp\canh-chua-ca-loc-1280x1000-368f.jpg" /></a>
                             </div>
                             <h3>Canh chua cá lóc</h3>
                             <p>120.000 đ</p>
@@ -221,8 +338,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\canh súp\canh-muop-1280x1000-final-2109.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\canh súp\canh-muop-1280x1000-final-2109.jpg" /></a>
                             </div>
                             <h3>
                                 Canh mướp hương nhồi thịt
@@ -235,8 +352,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\canh súp\canh-bi-nu-1280x1000-9989.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\canh súp\canh-bi-nu-1280x1000-9989.jpg" /></a>
                             </div>
                             <h3>
                                 Canh bí nụ nhồi tôm thịt
@@ -254,8 +371,8 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\bun-bo-2-18b2.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\bun-bo-2-18b2.jpg" /></a>
                             </div>
                             <h3>Bún bò TASTY</h3>
                             <p>79.000 đ</p>
@@ -263,8 +380,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\my-y-kem-nam-2-b720.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\my-y-kem-nam-2-b720.jpg" /></a>
                             </div>
                             <h3>
                                 Mì spaghetti sốt kem nấm
@@ -277,8 +394,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\chao-tom-dc62.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\chao-tom-dc62.jpg" /></a>
                             </div>
                             <h3>
                                 Cháo tôm
@@ -292,8 +409,8 @@
                     <div class="list-item">
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\chao-suon-1280x1000-977d.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\chao-suon-1280x1000-977d.jpg" /></a>
                             </div>
                             <h3>
                                 Cháo sườn
@@ -306,8 +423,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\com-chien-1280x1000-min-4d48.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\com-chien-1280x1000-min-4d48.jpg" /></a>
                             </div>
                             <h3>
                                 Cơm chiên hải sản TASTY
@@ -320,8 +437,8 @@
                         </div>
                         <div class="item">
                             <div class="item-photo">
-                                <img width="320" height="250"
-                                    src="image-banner-menu\menu\cơm-mì-cháo\com-chien-la-cam-aee6.jpg" />
+                                <a href="/detail.html"><img width="320" height="250"
+                                    src="image-banner-menu\menu\cơm-mì-cháo\com-chien-la-cam-aee6.jpg" /></a>
                             </div>
                             <h3>
                                 Cơm chiên thịt cua lá cẩm
@@ -448,7 +565,7 @@
                     </div>
                 </div>
             </div>
-            <footer class="footer">
+            <footer id="footer" class="footer">
                 <div class="footer-item-left">
                     <h2>TASTE KITCHEN</h2>
                     <P>Nơi trải nghiệm sự thăng hoa của ẩm thực, mang hương vị nhà hàng đến với gia đình bạn.</P>
@@ -464,7 +581,28 @@
                 </div>
             </footer>
         </div>
-        <script src="new-banner-menu.js"></script>
+        <script src="JS/new-banner-menu.js"></script>
+        <!-- merge -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let menuToggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation')
+            menuToggle.onclick = function(){
+              menuToggle.classList.toggle('active');
+              navigation.classList.toggle('active');
+            }
+            let list = document.querySelectorAll('.list');
+            for (let i=0; i<list.length; i++){
+              list[i].onclick = function(){
+                let j = 0;
+                while(j < list.length){
+                  list[j++].className = 'list';
+                }
+                list[i].className = 'list active';
+              }
+            }
+          </script>
 </body>
 
 </html>

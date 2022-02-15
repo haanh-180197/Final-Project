@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/* sidebarleft */
+body{
+    display: flex;
+}
+.gray{
+    color: white;
+    background-color: #3E5151;
+}
+.blue{
+    background-color: #a8c0ff;
+}
+.sideBarLeft{
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.inforIndex{
+    width: 100%;
+}
+.inforIndex header{
+    height: 200px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/image-banner-menu/banner/photo-1496412705862-e0088f16f791.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.inforIndex header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+.inforIndex .infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.inforIndex .infor section{
+    width: 40vw;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.inforIndex .infor .tienDo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    font-size: 12px;
+    position: relative;
+}
+.inforIndex .infor .tienDo hr{
+    position: absolute;
+    width: 65%;
+    top: 30%;
+    z-index: -1;
+    left: 17%;
+}
+.inforIndex .infor .tienDo .tienDoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inforIndex .infor .tienDo .tienDoDiv div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+/* inforOne */
+.inforIndex .infor .inforOne{
+    margin-top: 40px;
+}
+.inforIndex .infor .inforOne form{
+    display: flex;
+    flex-direction: column;
+}
+.inforIndex .infor .inforOne form div{
+    display: flex;
+    flex-direction: column;
+}
+.inforIndex .infor .inforOne form div label{
+    padding-bottom: 10px;
+}
+.inforIndex .infor .inforOne form div .checkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 400;
+}
+.inforIndex .infor .inforOne form div .checkbox label{
+    width: 95%;
+}
+.inforIndex .infor .inforOne form input[type="checkbox"]{
+    margin-right: 10px;
+}
+.inforIndex .infor .inforOne form input[type="date"], input[type="number"]{
+    width: 14vw;
+}
+.inforIndex .infor .inforOne input{
+    background-color: #bdc3c7;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.inforIndex .infor .inforOne .inforTwo{
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.inforTwo.open{
+    display: flex;
+}
+.inforTwo.close{
+    display: none;
+}
+.inforTwo.close{
+    display: none;
+}
+.inforIndex .infor .inforOne .inforTwo input, select{
+    width: 70%;
+}
+.inforIndex .infor .inforOne .inforTwo label{
+    width: 30%;
+}
+.inforIndex .infor .inforOne button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ED213A;
+    color: white;
+}
+/* footer */
+.footer {
+    margin-top: 50px;
+    display: flex;
+    padding: 35px 30px 20px;
+    background-color: #333333;
+    color:#dddddd;
+  }
+  
+  .footer-item-left, .footer-item-right {
+    width: 50%;
+  }
+  
+  .footer-item-left {
+    margin-right: 40px;
+  }
