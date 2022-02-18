@@ -1,7 +1,3 @@
-// Data
-window.addEventListener(`load`, (e) =>{
-
-})
 
 /*JS for menu*/
 const addToCart = document.querySelectorAll(".addtocart");
