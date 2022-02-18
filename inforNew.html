@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS2/infor.css"/>
+    <link rel="stylesheet" href="CSS2/sidebarleft.css">
+</head>
+<body>
+
+    <aside class="sideBarLeft">
+        <!-- merge -->
+        <div class="navigation">
+            <ul>
+              <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="index.html">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Trang Chủ</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                  <span class="title">Search</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#footer">
+                  <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                  <span class="title">Giới Thiệu</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                  <span class="title">Thực Đơn</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                  <span class="title">Tin Tức</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                  <span class="title">Giỏ Hàng</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="navigate-outline"></ion-icon></span>
+                  <span class="title">Location</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                  <span class="title">Login/Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="toggle">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+          </div>
+      <!-- merge -->
+    </aside>
+    <article class="inforIndex"> 
+        <header>
+            <p>Infor</p>
+        </header>
+        <section class="infor">
+            <section>
+                <div class="tienDo">
+                    <div class="tienDoDiv">
+                        <div class="blue">
+                            <p>1</p>
+                        </div>
+                        <p>Tien Hanh Dat Hang</p>
+                    </div>
+                    <div class="tienDoDiv">
+                        <div class="blue">
+                            <p>2</p>
+                        </div>
+                        <p>Thong tin Giao hang</p>
+                    </div>
+                    <div class="tienDoDiv">
+                        <div class="gray">
+                            <p>3</p>
+                        </div>
+                        <p>Thanh toan va dat hang</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="inforOne">
+                    <form>
+                        <div>
+                            <label>Phuong thuc giao hang</label>
+                            <div class="checkbox">
+                                <input type="radio" name="ship" class="ship"><label>Giao hang</label><br>
+                                <input type="radio" name="ship" class="noship"><label>Tu den Lay</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Thoi gian giao hang</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div>
+                            <label>So dien thoai dat hang</label>
+                            <input type="number" name="number" placeholder="So dien thoai dat hang" required>
+                        </div>
+                        <div>
+                            <label>Thong tin giao hang</label>
+                            <article class="inforTwo close">
+                                <form>
+                                    <label for="name">Ten</label>
+                                    <input type="text" name="name" required>
+                                    <label for="location">Dia chi</label>
+                                    <input type="text" name="location" required>
+                                    <label for="city">Tinh/Thanh pho</label>
+                                    <select name="city" required>
+                                        <option>-- Lua Chon --</option>
+                                        <option>Ha Noi</option>
+                                        <option>Ho Chi Minh</option>
+                                    </select>
+                                    <button>Luu</button>
+                                </form>
+                            </article>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer id="footer" class="footer">
+                <div class="footer-item-left">
+                    <h2>TASTE KITCHEN</h2>
+                    <P>Nơi trải nghiệm sự thăng hoa của ẩm thực, mang hương vị nhà hàng đến với gia đình bạn.</P>
+                    <p><img src="image-banner-menu\footer\bo-cong-thuong.png"</p>
+                </div>
+                <div class="footer-item-right">
+                    <h3>LIÊN HỆ</h3>
+                    <h4>CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ DỊCH VỤ F&B VIỆT NAM</h4>
+                    <p><b>Mã số thuế: </b>316657994</p>
+                    <p><b>Địa chỉ văn phòng:</b>Tầng 14, Toà nhà Vietcombank, Số 7, Đại La, Hoàng Mai, Hà Nội</p>
+                    <p><b>Phone: </b>1900 xxx xx</p>
+                    <p><b>Email: </b>order.tastykitchen@gmail.com</p>
+                </div>
+            </footer>
+        </section>
+    </article>
+    <script src="JS/infor.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+      let menuToggle = document.querySelector('.toggle');
+      let navigation = document.querySelector('.navigation')
+      menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+      let list = document.querySelectorAll('.list');
+      for (let i=0; i<list.length; i++){
+        list[i].onclick = function(){
+          let j = 0;
+          while(j < list.length){
+            list[j++].className = 'list';
+          }
+          list[i].className = 'list active';
+        }
+      }
+    </script>
+</body>
+</html>
