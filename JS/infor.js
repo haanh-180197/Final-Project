@@ -7,7 +7,11 @@ btnSubmit.addEventListener(`click`, (e) =>{
     const city = document.querySelector(`.inforIndex .infor .inforOne select[name="city"]`).value;
     const location = document.querySelector(`.inforIndex .infor .inforOne input[name="location"]`).value;
     const date = document.querySelector(`.inforIndex .infor .inforOne input[name="date"]`).value;
-    addInfor(name, number, city, location, date)
+    if(name == `` || number == `` || city == `` || location == `` || date == ``){
+        alert(`Xin hay dien day du thong tin nguoi dung`);
+    }else{    
+        addInfor(name, number, city, location, date)
+    }
 })
 
 const inFor = function(name, number, city, location, date){
