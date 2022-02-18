@@ -1,5 +1,6 @@
 /*JS for menu*/
 const addToCart = document.querySelectorAll(".addtocart");
+console.log(addToCart)
 
 for (let i = 0; i < addToCart.length; i++) {
   addToCart[i].addEventListener("click", function(event) {
