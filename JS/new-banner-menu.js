@@ -171,11 +171,11 @@ const saveData = () =>{
 }
 
 //Xử lý hover filter menu
-let indexUl = document.querySelector(".indexUl");
+let filterlist = document.querySelector(".filter-list");
 let indexLi = document.querySelectorAll(".indexLi");
-indexLi.forEach(el => {
-	el.addEventListener("click", function(){
-		indexUl.querySelector(".active").classList.remove("active");
- 		el.classList.add("active");
+indexLi.forEach((el) => {
+  el.addEventListener("click", function () {
+  filterlist.querySelector(".active").classList.remove("active");
+    el.classList.add("active");
   });
 });
