@@ -127,3 +127,31 @@ button:hover {
 
 
 /* merge */
+
+/*.item-photo {
+  position: relative;
+}*/
+
+.like-btn-on-food {
+  /*position: absolute;
+  right: 0px;
+  bottom: 50%;*/
+  height: 44px;
+  width: 44px;
+  background: rgb(255 252 252 / 60%);
+}
+
+.like-btn-on-food:hover {
+  color: white;
+  cursor: pointer;
+  background-color: red;
+}
+
+.like-btn-on-food .fa-regular.fa-heart {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.like-btn-on-food {
+  float: right;
+}

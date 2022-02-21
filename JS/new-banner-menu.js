@@ -169,3 +169,13 @@ const saveCart = () =>{
 const saveData = () =>{
   localStorage.setItem(`data`, JSON.stringify(data));
 }
+
+//Xử lý hover filter menu
+let indexUl = document.querySelector(".indexUl");
+let indexLi = document.querySelectorAll(".indexLi");
+indexLi.forEach(el => {
+	el.addEventListener("click", function(){
+		indexUl.querySelector(".active").classList.remove("active");
+ 		el.classList.add("active");
+  });
+});
