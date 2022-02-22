@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS2/like.css"/>
+    <link rel="stylesheet" href="CSS2/sidebarleft.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sideBarLeft">
+        <!-- merge -->
+        <div class="navigation">
+            <ul>
+              <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="index.html">
+                  <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                  <span class="title">Trang Chủ</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                  <span class="title">Search</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#footer">
+                  <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                  <span class="title">Giới Thiệu</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                  <span class="title">Thực Đơn</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                  <span class="title">Tin Tức</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                  <span class="title">Giỏ Hàng</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="navigate-outline"></ion-icon></span>
+                  <span class="title">Location</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                  <span class="title">Login/Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="toggle">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+          </div>
+      <!-- merge -->
+    </aside>
+    <article class="likeIndex"> 
+        <header>
+            <p>Like</p>
+        </header>
+        <section class="like">
+            <section>
+                <div class="likeUl">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </section>
+
+
+            <footer id="footer" class="footer">
+                <div class="footer-item-left">
+                    <h2>TASTE KITCHEN</h2>
+                    <P>Nơi trải nghiệm sự thăng hoa của ẩm thực, mang hương vị nhà hàng đến với gia đình bạn.</P>
+                    <p><img src="image-banner-menu\footer\bo-cong-thuong.png"></p>
+                </div>
+                <div class="footer-item-right">
+                    <h3>LIÊN HỆ</h3>
+                    <h4>CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ DỊCH VỤ F&B VIỆT NAM</h4>
+                    <p><b>Mã số thuế: </b>316657994</p>
+                    <p><b>Địa chỉ văn phòng:</b>Tầng 14, Toà nhà Vietcombank, Số 7, Đại La, Hoàng Mai, Hà Nội</p>
+                    <p><b>Phone: </b>1900 xxx xx</p>
+                    <p><b>Email: </b>order.tastykitchen@gmail.com</p>
+                </div>
+            </footer>
+        </section>
+    </article>
+    <script src="/JS/like.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+      let menuToggle = document.querySelector('.toggle');
+      let navigation = document.querySelector('.navigation')
+      menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+      let list = document.querySelectorAll('.list');
+      for (let i=0; i<list.length; i++){
+        list[i].onclick = function(){
+          let j = 0;
+          while(j < list.length){
+            list[j++].className = 'list';
+          }
+          list[i].className = 'list active';
+        }
+      }
+    </script>
+</body>
+</html>

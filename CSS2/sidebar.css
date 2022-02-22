@@ -83,6 +83,10 @@
     color: white;
     text-decoration: none;
 }
+.sideBarR .like a{
+    color: white;
+    text-decoration: none;
+}
 .sideBarR .cart:hover ~ .cartUl{
     display: block;
     position: absolute;

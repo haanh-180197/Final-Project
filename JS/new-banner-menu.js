@@ -179,3 +179,103 @@ indexLi.forEach(el => {
  		el.classList.add("active");
   });
 });
+
+
+// btnLike
+let like = [];
+const btnLike = document.querySelectorAll(`.like-btn-on-food`);
+window.addEventListener(`load`, (e)=>{
+  checkLike();
+  checkLikeCount();
+})
+
+for(let i = 0; i < btnLike.length; i++){
+  btnLike[i].addEventListener(`click`, (e) =>{
+    const classLike = btnLike[i].getAttribute(`class`);
+    if(classLike == `like-btn-on-food`){
+      const name = addToCart[i].getAttribute("data-name");
+      const price = Number(addToCart[i].getAttribute("data-price"));
+      const imgSrc = itemPhoto[i].getAttribute(`src`);
+      addItemToLike(name, price, 1, imgSrc);
+    }
+  })
+  btnLike[i].addEventListener(`click`, (e) =>{
+    const classLike = btnLike[i].getAttribute(`class`);
+    if(classLike == `like-btn-on-food click`){
+      const name = addToCart[i].getAttribute("data-name");
+      removeItemToLike(name);
+      btnLike[i].className = `like-btn-on-food`;
+    }
+    checkLike();
+    checkLikeCount();
+  })
+}
+
+const checkLike = () =>{
+  if(getLike()){
+    like = JSON.parse(getLike());
+  }
+  for(let i in like){
+    for(let j = 0; j < btnLike.length; j++){ 
+      const name = addToCart[j].getAttribute("data-name");
+      if(like[i][`name`] == name){
+        btnLike[j].className = `like-btn-on-food click`
+      }
+    }
+  }
+}
+
+const addItemToLike = (name, price, count, src) =>{
+  for(let i in like){
+    if(like[i][`name`] == name){
+      return;
+    }
+  }
+  const item = new Item(name, price, count, src);
+  like.push(item);
+  saveLike();
+}
+
+const removeItemToLike = (name) =>{
+  if(getLike()){
+    like = JSON.parse(getLike());
+  }
+  for(let i in like){
+    if(like[i][`name`] == name){
+      like.splice(i, 1);
+    }
+  }
+  saveLike();
+}
+
+
+// getLike
+const getLike = () => {
+  const a = localStorage.getItem(`like`);
+  return a;
+}
+// savelike
+const saveLike = () =>{
+  localStorage.setItem(`like`, JSON.stringify(like));
+}
+
+// LikeUl
+const likeUl = document.querySelector(`.likeUl`);
+const likeCount = document.querySelector(`.likeCount`)
+const checkLikeCount = () =>{
+  likeUl.innerHTML =``;
+  likeCount.innerHTML =``;
+  if(getLike()){
+    like = JSON.parse(getLike());
+  }
+  const newElementLikeCount = document.createElement(`p`);
+  newElementLikeCount.innerHTML = `
+  ${like.length}
+  `
+  const newElementLike = document.createElement(`p`);
+  newElementLike.innerHTML = `
+  Ban da thich <span class="red">${like.length} Mon an</span>
+  `
+  likeCount.appendChild(newElementLikeCount);
+  likeUl.appendChild(newElementLike);
+}
