@@ -105,7 +105,7 @@ button:hover {
   font-size: 40px;
   margin-top: 23px;
 }
-  
+
 .text-box-title-h3 h3 {
   margin: 0px;
 }
@@ -153,8 +153,19 @@ button:hover {
 .like-btn-on-food {
   float: right;
 }
+
 .like-btn-on-food.click{
   background-color: red;
   color: white;
   cursor: pointer;
+}
+
+.indexLi.active a{
+	background: red;
+	color: #fff;
+}
+
+.aIndex:hover {
+  color: white;
+  background: red;
 }
